@@ -9,6 +9,7 @@
 \usepackage{enumerate}
 \usepackage{float}
 \usepackage{geometry}
+\usepackage{bookmark}
 \usepackage{latexsym}
 \usepackage{listings}
 \usepackage{multicol,multirow,multido}
@@ -30,6 +31,10 @@
 \usepackage{booktabs}
 \usepackage[labelfont=bf,format=plain,justification=centering,singlelinecheck=false]{caption}
 \usepackage{fancyhdr} 
+\hypersetup{
+colorlinks=true,
+linkcolor=black
+}
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{page \thepage\ of \pageref{LastPage}}
@@ -41,8 +46,9 @@
 %----------------------------------------------------------------------------------------
 \begin{document}
 
-\title{\huge VC210 Notes} % Title
+\title{\huge VC210 Notes} 
 \author{Dzsyang}
+\date{November 14, 2022}
 
 \maketitle % Insert the title, author and date
 \thispagestyle{fancy}
@@ -103,7 +109,7 @@ $1 Pa=1 kg\cdot m^{-1}\cdot s^{-2}$. $10^{5} Pa=1 bar$.\par $760 mmHg=760 Torr=1
 \subsection{The Gas Laws}
 \textbf{Boyle's Pressure Experiment} $PV=Const.$\par
 \textbf{Charles' Law} $V/T=Const.$\par No real gas has zero volume. Lowest possible temperature: -273.15°C.
-\subsection{Avogadro‘s Principle}
+\subsection{Avogadro's Principle}
 All gases occupy the same volume under the same conditions of temperature
 and pressures. The molar volume of all gases is close to $22.4 L\cdot mol^{-1}$ at 0 °C and 1 atm.
 \subsection{Standard Conditions}
@@ -133,7 +139,8 @@ $\chi_{A}=\dfrac{n_{A}}{n_{A}+n_{B}+...}$, $p_{A}=\chi_{A}p_{T}$
 \end{center}
 \subsection{The Kinetic Model of Gases}
 The kinetic model (KMT) of a gas allows us to derive the quantitative relation between pressure and the speeds of the molecules.\par
-\textbf{Root Mean Square Speed} $v_{rms}=(\frac{3RT}{M})^{2}$.\par
+\textbf{Root Mean Square Speed} $v_{rms}=\sqrt\frac{3RT}{M}$.\par
+\textbf{Most Possible Speed} $v_{rms}=\sqrt\frac{2RT}{M}$.\par
 \textbf{Effusion} In effusion, molecules escape through a small hole in a barrier into a region of low pressure. And we can find $\overline{v}\propto \frac{1}{\sqrt{m}}$.\par
 \textbf{The Maxwell Distribution of Speeds} $f(v)=4\pi (\frac{M}{2\pi RT})^{\frac{3}{2}}v^{2}e^{-Mv^{2}/2RT}$.\par
 For the same temparature, the greater the molar mass, the lower the speed.\par
@@ -143,7 +150,7 @@ Gases can be condensed to liquids when cooled or compressed.\par
 A measurement of the compression factor $Z=\frac{V_{m, real}}{V_{m, ideal}}$.\par
 At low pressures the attractive forces are dominant and $Z<1$.\par
 At high pressures, repulsive forces become dominant and $Z>1$ for all gases.\par
-\textbf{van der Waals equation} 
+\subsection{van der Waals Equation} 
 $(p+a\frac{n^{2}}{V^{2}})(V-nb)=nRT$.\par
 Parameter “a” represents the attraction between molecules; the value is large for strongly attracting molecules.
 Parameter “b” represents the role of repulsions; it can be thought of as representing the volume.
@@ -199,7 +206,8 @@ Cholesteric phase: sheets of parallel molecules are rotated relative to their ne
 \textbf{Closed-packed Structures} ABABAB pattern: Hexagonal closed-pack (hcp); ABCABC pattern: Cubic closed-pack (ccp).
 \subsection{Unit Cells}
 The smallest region of the crystal lattice that repeats itself is referred to as the unit cell. The atoms in a unit cell can stack,
-or arrange themselves, into one of three types of cubic structures: 1. Primitive cubic; 2. Body-centered cubic; 3. Cubic closed-packed.
+or arrange themselves, into one of three types of cubic structures: 1. Primitive cubic; 2. Body-centered cubic; 3. Cubic closed-packed.\par
+\noindent(4. Face-centered close packed; 5. Hexagonal close packed)
 
 
 
@@ -370,6 +378,11 @@ In very dilute solution, where all ions are independent, $i$ = number of ions.
 Osmometry is the technique used to determine the molar mass of a solute from osmotic pressure measurements.
 
 
+\newpage
+%----------------------------------------------------------------------------------------
+%	Section 11
+%----------------------------------------------------------------------------------------
+\section{Chemical Equilibrium}
 
 \newpage
 \end{document}

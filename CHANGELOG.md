@@ -2,7 +2,15 @@
 All notable changes to this project will be documented in this file.
 ## [Unreleased]
 - Section 1-5
-- Content of RC 
+- Content of RC 1
+## [0.0.2] - 2022-11-16
+### Added
+- Content of RC 2
+- Bookmarks
+### Fixed
+- Some mistakes
+### Changed
+- Fixed the date
 ## [0.0.1] - 2022-11-14
 ### Added
 - Section 6-10
