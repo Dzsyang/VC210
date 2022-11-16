@@ -9,4 +9,4 @@ Information:
 - Instructor: Prof. Milias Liu
 - Date: Fall 2022
 
-If someone who casually finds this project, and also is interested in it, **just take away the files**. That's OK.
+If someone who casually finds this project, and is also interested in it, **just take away the files**. That's OK.
