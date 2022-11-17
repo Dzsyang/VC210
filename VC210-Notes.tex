@@ -25,6 +25,10 @@
 \usepackage{cite}
 \usepackage{appendix}
 \usepackage{verbatim}
+\usepackage{draftwatermark}
+\SetWatermarkText{Dzsyang}
+\SetWatermarkLightness{0.95}
+\SetWatermarkScale{0.4}  
 \usepackage[T1]{fontenc}
 \usepackage{lastpage}
 \usepackage{tabularx}
@@ -73,6 +77,41 @@ linkcolor=black
 %	Section 1
 %----------------------------------------------------------------------------------------
 \section{Foundamentals}
+\subsection{Chemistry at Three Levels}
+\textbf{Macroscopic} level: dealing with the properties of large, visible objects.\par
+\textbf{Microscopic} level: dealing with the rearrangements of atoms.\par
+\textbf{Symbolic} level: using terms, chemical symbols, and mathematical equations.\par
+A chemist thinks at the microscopic level, conducts experiments at the macroscopic level, and represents both symbolically.
+\subsection{Nuclear Model}
+$p^{+} = 1.673\times10^{-27} kg, n^{0} = 1.675\times10^{-27} kg$.\par $p^{+}$ and $n^{0}$ are 2000 times heavier than an $e^{-}$.\par
+\textbf{Isotopes} of an element have the same atomic number but different mass numbers. Their nuclei have the same number of protons but different numbers of neutrons. The chemical properties of all the atom’s isotopes are the same.
+\subsection{Properties}
+\textbf{Extensive properties}: Volume, Mass;  
+\textbf{Intensive properties}: Density, Temperature
+\subsection{Energy}
+\textbf{Kinetic} is the energy that a body possesses due to motion.\par
+\textbf{Potential} is the energy that a body possesses due to its position in a field of force.\par
+\textbf{Electromagnetic} is the energy due to attractions and repulsions between electric charges.
+\subsection{Mixtures}
+\textbf{Heterogeneous}: components are visible with a microscope or an unaided eye. (Milk)\par
+\textbf{Homogeneous}: well mixed into a single phase; a microscope cannot distinguish the particles. (Sugar water)
+\subsection{Separation}
+\begin{center}
+  \begin{tabular}{cc}
+    \toprule
+    Distillation    & Boiling Points  \\
+    Chromatography  & Absorption ability  \\
+    Decanting  & Density \\
+    Filtration  & Particle size and solubility  \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+
+
+
+
+
 
 \newpage
 %----------------------------------------------------------------------------------------
@@ -152,8 +191,8 @@ At low pressures the attractive forces are dominant and $Z<1$.\par
 At high pressures, repulsive forces become dominant and $Z>1$ for all gases.\par
 \subsection{van der Waals Equation} 
 $(p+a\frac{n^{2}}{V^{2}})(V-nb)=nRT$.\par
-Parameter “a” represents the attraction between molecules; the value is large for strongly attracting molecules.
-Parameter “b” represents the role of repulsions; it can be thought of as representing the volume.
+Parameter "a" represents the attraction between molecules; the value is large for strongly attracting molecules.
+Parameter "b" represents the role of repulsions; it can be thought of as representing the volume.
 
 \newpage
 %----------------------------------------------------------------------------------------
@@ -383,6 +422,74 @@ Osmometry is the technique used to determine the molar mass of a solute from osm
 %	Section 11
 %----------------------------------------------------------------------------------------
 \section{Chemical Equilibrium}
+\subsection{Reactions at Equilibrium}
+\textbf{The criteria for dynamic chemical equilibrium are:}\par
+1. The forward and reverse reactions are both taking place.\par
+2. The forward rate equals the reverse rate.\par
+Note, it’s impossible to make more product when at equilibrium. The reaction just appears to have stopped moving.
+\subsection{Equilibrium Constant K}
+$K$ is the same regardless of initial compositions.\par
+\textbf{The law of mass action}\par
+\begin{center}
+$K =(\dfrac{partial\ pressure \ of\ Products}{partial\ pressure\ of\ Reactants})_{equilbrium}$.
+\end{center}\par
+In general for $a\ A(g) + b\ B(g)\rightleftharpoons  c\ C(g) + d\ D(g)$
+\begin{center}
+$K_{p} =\dfrac{(p_{C})^{c}(p_{D})^{d}}{(p_{A})^{a}(p_{B})^{b}}$
+\end{center}\par
+here $p$ means partial pressure, since the reactants and products are gases.\par
+It can be shown empirically or thermodynamically that pure liquids or solids do not appear in $K$.\par
+\textbf{Aqueous solutions}\par
+In general for $a\ A(aq) + b\ B(aq)\rightleftharpoons  c\ C(aq) + d\ D(aq)$
+\begin{center}
+$K_{C} =\dfrac{[C]^{c}[D]^{d}}{[A]^{a}[B]^{b}}$
+\end{center}\par
+Note the change to brackets, [ ], signifying, $c$, or molarity, $mol\cdot L^{-1}$.\par
+\textbf{Activity}\par
+It is common when deriving equations to simplify expressions without units.
+\begin{center}
+\renewcommand\arraystretch{1.8}
+  \begin{tabular}{ccc}
+    \toprule
+    Summary & Simplified form & Interpretation \\
+    \hline
+    Ideal gas    & $a_{J} = \dfrac{p_{J}}{p^{0}}$  & [$p^{0} = 1\ bar\ or\ 1\ atm$]  \\
+    Solute in a dilute solution  & $a_{J} =\dfrac{ [J]}{c^{0}}$  & [$c^{0} = 1\ mol\cdot L^{-1}$]  \\
+    Pure solid or pure liquid  & $a = 1$  & unchanging throughout the reaction \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+\subsection{Origins of K and $\Delta$G}
+$\Delta G_{r} = \Delta G^{\circ}_{r} + RT ln\dfrac{(a_{C})^{c}(a_{D})^{d}}{(a_{A})^{a}(a_{B})^{b}}$, here $a$ = activity, either a gas or solute in a solution (molarity); $r$ = the overall reaction.\par
+\textbf{Reaction quotient} $Q =\dfrac{(a_{C})^{c}(a_{D})^{d}}{(a_{A})^{a}(a_{B})^{b}}$, then $\Delta G_{r} = \Delta G^{\circ}_{r} + RT lnQ$.\par
+ Here $K$ is a constant, it is known. $Q$ is unknown and must be found. $Q$ can be larger or smaller than $K$; again it must be calculated.\par
+Once $Q = K$ the reaction is at equilibrium, therefore $\Delta G=0$. This leads to\par
+$\Delta G^{\circ}=-RTlnK$. This of course links the thermodynamic tables $\Delta G^{\circ}$ to $K$.\par
+\subsection{What Does K Mean?}
+1. $K << 1$ favours reactants at equilibrium ($\Delta G^{\circ}$ is very positive);\par
+2. When $10^{-3} < K < 10^{3}$ neither products nor reactants are favored;\par when ($-10<\Delta G^{\circ}<10$) then temperature will be a factor;\par
+3. $K >> 1$ favours products at equilibrium ($\Delta G^{\circ}$ is very negative).
+\subsection{The 5\% rule}
+The 5\% rule says we can ignore "$x$" when there is less than 5\% decomposition or ionisation change (the definition of a weak acid).\par
+A note of good practice is, once solving for $x$, always plug $x$ back into the original equilibrium table to make sure you’re below 5\% and to get your final values.
+\subsection{Le Chatelier's Principle}
+\textbf{Concentration}\par
+Le Chatelier's principle suggests a good way to ensure that a reaction goes on generating a substance: simply remove products as they are formed.\par
+\textbf{Inert Gas}\par
+Adding an inert gas does not interfere with the reacting gases, so the reacting gases continue to occupy the same volume, and so their individual molar concentrations and partial pressures remain unchanged despite the presence of an inert gas.\par
+\textbf{Temperature}\par
+$ln\dfrac{K_{2}}{K_{1}}=\dfrac{\Delta H^{\circ}}{R}(\dfrac{1}{T_{1}}-\dfrac{1}{T_{2}})$, here we see $K_{2}$ over $K_{1}$ and no "-" on the right.
+\subsection{Catalyst}
+A catalyst does not affect the composition at equilibrium.
+
+
+
+
+
+
+
+
+
 
 \newpage
 \end{document}
