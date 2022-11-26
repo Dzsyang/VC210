@@ -35,6 +35,7 @@
 \usepackage{booktabs}
 \usepackage[labelfont=bf,format=plain,justification=centering,singlelinecheck=false]{caption}
 \usepackage{fancyhdr} 
+\usepackage{makecell}
 \hypersetup{
 colorlinks=true,
 linkcolor=black
@@ -247,7 +248,10 @@ Cholesteric phase: sheets of parallel molecules are rotated relative to their ne
 The smallest region of the crystal lattice that repeats itself is referred to as the unit cell. The atoms in a unit cell can stack,
 or arrange themselves, into one of three types of cubic structures: 1. Primitive cubic; 2. Body-centered cubic; 3. Cubic closed-packed.\par
 \noindent(4. Face-centered close packed; 5. Hexagonal close packed)
-
+\begin{figure}[b]
+\centering
+\includegraphics[width=9.5cm,height=1.5cm]{unitcell.png}
+\end{figure}
 
 
 \newpage
@@ -478,10 +482,102 @@ Le Chatelier's principle suggests a good way to ensure that a reaction goes on g
 \textbf{Inert Gas}\par
 Adding an inert gas does not interfere with the reacting gases, so the reacting gases continue to occupy the same volume, and so their individual molar concentrations and partial pressures remain unchanged despite the presence of an inert gas.\par
 \textbf{Temperature}\par
-$ln\dfrac{K_{2}}{K_{1}}=\dfrac{\Delta H^{\circ}}{R}(\dfrac{1}{T_{1}}-\dfrac{1}{T_{2}})$, here we see $K_{2}$ over $K_{1}$ and no "-" on the right.
-\subsection{Catalyst}
-A catalyst does not affect the composition at equilibrium.
+Since $\Delta H$ and $\Delta S$ are independent of range of temperatures,\par $ln\dfrac{K_{2}}{K_{1}}=\dfrac{\Delta H^{\circ}}{R}(\dfrac{1}{T_{1}}-\dfrac{1}{T_{2}})$, here we see $K_{2}$ over $K_{1}$ and no "-" on the right.
 
+
+
+
+
+
+
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	Section 12
+%----------------------------------------------------------------------------------------
+\section{Acid-Base}
+\subsection{Definitions}
+\textbf{Svante Arrhenius}\par
+An acid is a compound that contains hydrogen and reacts with water to form hydrogen ($H^{+}$) ions.\par
+A base is a compound that produces hydroxide ions ($OH^{-}$) in water.\par
+\textbf{Brønsted–Lowry}\par
+An acid is a proton donor, and a base is a proton acceptor.\par
+A strong acid is fully deprotonated in solution ($\rightarrow$).\par
+A weak acid is only partly deprotonated in solution ($\rightleftharpoons$).\par
+A strong base is completely protonated in solution ($\rightarrow$).\par
+A weak base is only partially protonated in solution ($\rightleftharpoons$).\par
+Acid $\xrightarrow{donates\ H^{+}}$ conjugate base. Base $\xrightarrow{accepts\ H^{+}}$ conjugate acid.\par
+\textbf{Brønsted vs Arrhenius}\par
+Brønsted acids and bases are more general than the Arrhenius definitions.\par
+\textbf{Lewis}\par
+An acid is an electron pair acceptor.\par
+A base is an electron pair donor.\par
+\textbf{Lewis vs Brønsted vs Arrhenius}\par
+Lewis theory is more general than Brønsted or Arrhenius acid–base theory.
+\subsection{Hydronium Ion}
+The $H_{3}O^{+}$ ion is called the hydronium ion. We say that the $H_{2}O$ becomes strongly hydrated in a solution to form $H_{3}O^{+}$.
+\subsection{Amphiprotic vs Amphoteric}
+\textbf{Amphiprotic}: a substance that can be a proton donor or reciever. ($H_{2}O$)\par
+\textbf{Amphoteric}: a substance that can behave as either an acid or a base. ($Al$)\par
+\subsection{Autoprotolysis Constant}
+For $H_{2}O(l) + H_{2}O(l) \rightleftharpoons H_{3}O^{+}(aq) + OH^{-}(aq)$, $K_{w}=[H_{3}O^{+}][OH^{-}]$.\par
+In pure water at 25°C, $K_{w}=[H_{3}O^{+}][OH^{-}]=1.0\times 10^{-14}$. The concentrations of $H_{3}O^{+}$ and $OH^{-}$ are very low, which explains why pure water is such a poor conductor of electricity.\par
+Autoprotolysis reaction is endothermic, so $K_{w}$ increases with temperature.
+\subsection{The pH Scale}
+$pH = -log [H_{3}O^{+}]$, $pOH = -log [OH^{-}]$, $pK_{w} = - log K_{w}$. $pH+pOH=pK_{w}$.\par
+Most solutions used in chemistry have a pH ranging from 0 to 14, but values outside this range are possible.\par
+\subsection{Acid Strength}
+There is no general theory that describes acid strength. We only have general trends to work with and compare. 1.Equilibrium constants, $K_{a}$ and $K_{b}$; 2. Solvent.\par
+Two different trends are observed, one for periods, the other for groups.\par
+\textbf{Period}: Acid strength is based on bond polarity;\par
+\textbf{Group}: Acid strength is based on bond strength. ($HF<HCl<HBr<HI$)\par
+There are two ways to compare oxoacids.\par
+\textbf{In groups with the same number of oxygen atoms}:\par The greater the electronegativity the greater the acidity; ($HClO > HBrO > HIO$)\par
+\textbf{A family of the same element with different numbers of oxygen atoms}:\par The greater the number of oxygen atoms, the stronger the acid.
+\subsection{The pH of Salt Solutions}
+\renewcommand\arraystretch{1.3}
+\begin{center}
+Common Cations in Water\par
+  \begin{tabular}{ccc}
+    \toprule
+    Character & Interpretation & Examples \\
+    \hline
+    Acidic    & Conjugate acids of weak bases &$NH_{4}^{+}$ \\
+    & Small, highly charged metal cations & $Fe^{3+}, Al^{3+}, Cu^{2+}$ \\
+    \hline
+    Neutral  & Group 1 and 2 cations & $Li^{+}, Na^{+}, K^{+}, Mg^{+}, Ca^{+}$\\
+    & metal cations with charge +1& $Ag^{+}$ \\
+    \hline
+    Basic  & None&  \\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+\begin{center}
+Common Anions in Water\par  
+  \begin{tabular}{ccc}
+    \toprule
+    Character & Interpretation & Examples \\
+    \hline
+    Acidic    & Very few &$HSO_{4}^{-}, H_{2}PO_{4}^{-}$ \\
+    \hline
+    Neutral  & Conjugate bases of strong acids &$Cl^{-}, Br^{-}, I^{-}, NO_{3}^{-}, ClO_{4}^{-}$ \\
+    \hline
+    Basic  & Conjugate bases of weak acids& \thead{$F^{-}, O^{2-}, OH^{-}, S^{2-}, HS^{-}, CN^{-}, CO_{3}^{2-},$\\ $PO_{4}^{3-}, NO_{2}^{-}, CH_{3}CO_{2}^{-},$ other carboxylate ions} \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+\subsection{The pH of Polyprotic Acids}
+For all polyprotic acids or bases, $K_{a_{1}}$ is always the greatest contributor to the overall pH of the solution — except for $H_{2}SO_{4}$.
+Only $H_{2}SO_{4}$ has a large $K_{a_{1}}$ and $K_{a_{2}}$.\par
+$pH = \frac{1}{2} (pK_{a_{1}} + pK_{a_{2}})$ as long as initial concentration $[X]_{initial} >> K_{a_{1}}$.
+\subsection{Very Dilute Solutions}
+\textbf{of Strong Acids and Bases}\par
+$K_{w} = [H3O^{+}] ([H3O^{+}] - [HCl]_{initial})$.\par
+$K_{w} = [H3O^{+}] ([H3O^{+}] - [NaOH]_{initial})$.\par
+\textbf{of Weak Acids}\par
+Four unknowns exist for a weak acid $HA$, $A^{-}$, $H3O^{+}$, and $OH^{-}$.\par
+Both $K_{w} = [H3O^{+}][OH^{-}]$ and $K_{a} = \dfrac{[H3O^{+}][A^{-}]}{[HA]}$ are used to arrive at the following cubic equation.
+$[H3O^{+}]^{3} + K_{a}[H3O^{+}]^{2} - (K_{w} + K_{a}[HA]_{initial}])[H3O^{+}] - K_{a}K_{w} = 0$.
 
 
 
