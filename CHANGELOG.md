@@ -1,8 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 ## [Unreleased]
-- Section 2-5
-- Content of RC 1
+- Section 2-5, 15
+## [0.0.5] - 2022-12-06
+### Added
+- Section 14
+### Changed
+- Due to my broken win11 system, I lost the tex of Section 13. **:(**
 ## [0.0.4] - 2022-11-26
 ### Added
 - Section 12
